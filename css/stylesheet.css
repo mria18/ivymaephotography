@@ -1,0 +1,193 @@
+/* -- general styling -- */
+#header{
+    display:block;
+    text-align:center;
+    padding: 10px;
+    background-color: white;
+}
+
+body { 
+    margin:0;
+    box-sizing: border-box; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px; 
+    font-weight:100;   
+  }
+
+  h2{
+    padding:10px;
+    text-align:center;
+    font-family: "roc-grotesk", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  p{
+    padding:10px;
+  }
+
+
+/* -- navigation styling -- */
+ul {
+    margin: 0;
+    padding: 0; 
+  }
+a { 
+  text-decoration: none; 
+  color:black; 
+  font-size: 20px;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+  }
+  nav ul li {
+    display: inline-block; 
+    padding: 10px;  
+  }
+
+
+  nav a {
+    margin: 10px;
+    padding: 20px;
+    //border: solid 0.2vw white;
+    text-align:center;
+}
+nav a:hover {
+    color: #565656;
+    //background-color: white;
+}
+nav {     
+    position:sticky;
+    top:0;
+}
+
+
+/* --- gallery styling images --- */
+
+.gallery {
+    width:100%; 
+    margin: auto;
+    //display:flex;
+}
+
+.gallery img {
+    width: 33%; 
+    opacity:1;
+    transition:.5 ease;
+    backface-visibility: hidden;  
+}
+.gallery img:hover {
+    opacity: 0.3;
+}
+
+
+/* -- about styling -- */
+
+#about{
+    padding:5px;
+    text-align:center;
+}
+
+
+
+/* -- contact styling -- */
+
+#contact{
+    padding:5px;
+}
+
+.contacttext{
+    text-align:center;
+    padding:10px;
+}
+
+
+/* -- contact form styling -- */
+
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #ccc; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
+
+/* -- sumbit button styling -- */
+input[type=submit] {
+  background-color: #606060;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor:pointer;
+}
+
+/* -- hover submit button styling -- */
+input[type=submit]:hover {
+  background-color: #292929;
+}
+
+/* -- rectangle around form styling -- */
+.container {
+  background-color:#d3d3d3;
+  padding: 20px;
+}
+
+
+
+ /* -- hamburger styling -- */
+ #burger, label{
+    display:none;
+  }
+  
+  @media screen and (max-width:768px) {
+    label {
+      display:block;
+      padding:10px;
+    }
+    nav ul {
+      display:none;
+    }
+    nav input:checked ~ ul {
+      display:block;
+    }
+    nav ul li {
+      display:block;
+      background-color: white;
+      border-top:solid 1px #1c1c1c;
+    }
+    nav ul li:last-child{
+      border-bottom:solid 1 px #1c1c1c;
+    }
+  
+  }
+
+
+  /* -- responsive design -- */
+@media screen and (max-width: 360px) {
+    h1{ font-size: 6vw;}
+    body { font-size: 4.5vw; }
+    p { line-height: 3vh; } 
+    .gallery img{
+        width:100%;
+      }
+    #header img{
+        width:30%;
+    }
+ }
+ @media screen and (max-width: 1024px) {
+    .gallery img{
+        width:100%;
+      }
+ }
+
+
+/* -- footer styling -- */
+
+ .footer{
+    font-size: 10px;
+    text-align: center;
+ }
